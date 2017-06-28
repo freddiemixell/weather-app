@@ -1,0 +1,27 @@
+#mainBox {
+	margin: auto;
+	text-align: center;
+	width: 60%;
+}
+
+#weatherIcon {
+	height: 75px;
+	width: 75px;
+}
+
+.container {
+	padding-top: 20px;
+}
+
+#bigShow {
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+
+}
+
+@media screen and (min-width: 480px) {
+    #bigShow {
+        width: 400px;
+    }
+}
