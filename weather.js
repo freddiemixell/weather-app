@@ -18,27 +18,27 @@ $.getJSON(getIP).done(function(location) {
         });
         
         if (data.weather[0].id >= 200 && data.weather[0].id <= 232) {
-            $('#bigShow').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/flash-1455285_1920.jpg")');
+            $('body').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/flash-1455285_1920.jpg")');
         }
 
         if (data.weather[0].id >= 300 && data.weather[0].id <= 321) {
-            $('#bigShow').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/rain-874041_1920.jpg")');
+            $('body').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/rain-874041_1920.jpg")');
         }
 
         if (data.weather[0].id >= 500 && data.weather[0].id <= 531) {
-            $('#bigShow').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/rain-874041_1920.jpg")');
+            $('body').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/rain-874041_1920.jpg")');
         }
 
          if (data.weather[0].id >= 600 && data.weather[0].id <= 622) {
-            $('#bigShow').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/alm-549333_1920.jpg")');
+            $('body').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/alm-549333_1920.jpg")');
         }
 
         if (data.weather[0].id >= 701 && data.weather[0].id <= 781) {
-            $('#bigShow').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/cyclone-2102397_1920.jpg")');
+            $('body').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/cyclone-2102397_1920.jpg")');
         }
 
         if (data.weather[0].id == 800) {
-            $('#bigShow').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/sky-183869_1920.jpg")');
+            $('body').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/sky-183869_1920.jpg")');
         }
 
         if (data.weather[0].id > 800 && data.weather[0].id < 805) {
