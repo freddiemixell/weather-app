@@ -1,4 +1,5 @@
-var mykey = config.MY_KEY;
+var mykey = config.MY_KEY;;
+//Get your api key from openweathermap.org
 var getIP = 'http://ip-api.com/json/';
 var openWeatherMap = 'http://api.openweathermap.org/data/2.5/weather'
 $.getJSON(getIP).done(function(location) {
@@ -18,31 +19,31 @@ $.getJSON(getIP).done(function(location) {
         });
         
         if (data.weather[0].id >= 200 && data.weather[0].id <= 232) {
-            $('body').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/flash-1455285_1920.jpg")');
+            $('body').css('background-image', 'url("img/lightning.jpg")');
         }
 
         if (data.weather[0].id >= 300 && data.weather[0].id <= 321) {
-            $('body').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/rain-874041_1920.jpg")');
+            $('body').css('background-image', 'url("img/water.jpg")');
         }
 
         if (data.weather[0].id >= 500 && data.weather[0].id <= 531) {
-            $('body').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/rain-874041_1920.jpg")');
+            $('body').css('background-image', 'url("img/rain2.jpg")');
         }
 
          if (data.weather[0].id >= 600 && data.weather[0].id <= 622) {
-            $('body').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/alm-549333_1920.jpg")');
+            $('body').css('background-image', 'url("img/snow.jpg")');
         }
 
         if (data.weather[0].id >= 701 && data.weather[0].id <= 781) {
-            $('body').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/cyclone-2102397_1920.jpg")');
+            $('body').css('background-image', 'url("img/tornado.jpg")');
         }
 
         if (data.weather[0].id == 800) {
-            $('body').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/sky-183869_1920.jpg")');
+            $('body').css('background-image', 'url("img/clear.jpg")');
         }
 
         if (data.weather[0].id > 800 && data.weather[0].id < 805) {
-            $('body').css('background-image', 'url("https://saucyfreds.com/wp-content/uploads/2017/06/field-533541_1920.jpg")');
+            $('body').css('background-image', 'url("img/field.jpg")');
         }
     });
 });
